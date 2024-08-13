@@ -1,0 +1,127 @@
+body{
+
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+  color: white;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  width: 90vw;
+  height: 360px;
+
+  margin-top: 35px;
+  padding: 15px;
+}
+
+.logo{
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.logo-titulo{
+  width: 320px;
+  margin-top: -120px;
+}
+
+.titulo{
+  font-family: "Benne", serif;
+  font-size: 35px;
+}
+
+.indice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  position: relative;
+  z-index: 100;
+
+  width: 90vw;
+  height: 100px;
+
+  margin: 10px;
+}
+
+.indice .pergamino{
+  width: 210px;
+}
+
+.indice .nombre{
+  font-family: "Benne", serif;
+  font-size: 24px;
+  color: black;
+
+  background-color: transparent;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mySwiper{
+  width: 95vw;
+  height: 560px;
+
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  background-image: url(./multimedia/fondo\ pergamino.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mySwiper .contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: black;
+}
+
+.contenedor .flayer{
+  width: 340px;
+  height: 490px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out; /* Indica que se puede hacer zoom out */
+}
+
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: zoom-in; /* Indica que se puede hacer zoom in */
+}
