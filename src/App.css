@@ -73,8 +73,8 @@ body{
   width: 95vw;
   height: 560px;
 
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
   background-image: url(./multimedia/fondo\ pergamino.png);
   background-position: center;
@@ -124,4 +124,18 @@ body{
   max-height: 100%;
   object-fit: contain;
   cursor: zoom-in; /* Indica que se puede hacer zoom in */
+}
+
+.seccion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 70px;
+  padding-top: 20px;
+}
+
+.separador{
+  width: 340px;
 }
