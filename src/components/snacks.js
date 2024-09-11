@@ -44,7 +44,7 @@ export default function Snacks() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={snacksImg}
               alt='...'
@@ -57,7 +57,7 @@ export default function Snacks() {
 
       {isFullscreen && (
         <div className="fullscreen-overlay" onClick={handleCloseFullscreen}>
-          <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
+          <img loading='lazy' src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
         </div>
       )}
     </>

@@ -48,7 +48,7 @@ export default function PlatoFuerte() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={fuerte1}
               alt='...'
@@ -59,7 +59,7 @@ export default function PlatoFuerte() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={fuerte2}
               alt='...'
@@ -70,7 +70,7 @@ export default function PlatoFuerte() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={fuerte3}
               alt='...'
@@ -81,7 +81,7 @@ export default function PlatoFuerte() {
         
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={fuerte4}
               alt='...'
@@ -92,7 +92,7 @@ export default function PlatoFuerte() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={fuerte5}
               alt='...'
@@ -105,7 +105,7 @@ export default function PlatoFuerte() {
 
       {isFullscreen && (
         <div className="fullscreen-overlay" onClick={handleCloseFullscreen}>
-          <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
+          <img loading='lazy' src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
         </div>
       )}
     </>

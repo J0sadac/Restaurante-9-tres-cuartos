@@ -44,7 +44,7 @@ export default function Paquetes() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={paquete1}
               alt='...'
@@ -55,7 +55,7 @@ export default function Paquetes() {
 
         <SwiperSlide>
           <div className='contenedor'>
-            <img
+            <img loading='lazy'
               className='flayer'
               src={paquete2}
               alt='...'
@@ -68,7 +68,7 @@ export default function Paquetes() {
 
       {isFullscreen && (
         <div className="fullscreen-overlay" onClick={handleCloseFullscreen}>
-          <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
+          <img loading='lazy' src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
         </div>
       )}
     </>

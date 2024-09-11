@@ -14,6 +14,7 @@ import Bebidas from './bebidas';
 import Paquetes from './paquetes';
 
 
+
 function Main () {
     const snacksRef = useRef(null);
     const platoFuerteRef = useRef(null);
@@ -27,31 +28,31 @@ function Main () {
     return(
         <>
             <section className='head'>
-                <img className='logo' src={Logo} alt='Restaurante 9 3/4' />
+                <img loading='lazy' className='logo' src={Logo} alt='Restaurante 9 3/4' />
                 <h1 className='titulo'>Restaurante 9 3/4</h1>
-                <img className='logo-titulo' src={gifLogo} alt='titulo' />
+                <img loading='lazy' className='logo-titulo' src={gifLogo} alt='titulo' />
             </section>
 
             <Pergamino scrollToSection={scrollToSection} refs={{snacksRef, platoFuerteRef, bebidasRef, paquetesRef}} />
             
 
             <section ref={snacksRef} className='seccion'>
-                <img className='separador' alt='separador' src={SeparadorSnacks} />
+                <img loading='lazy' className='separador' alt='separador' src={SeparadorSnacks} />
                 <Snacks />
             </section>
 
             <section ref={platoFuerteRef} className='seccion'>
-                <img className='separador' alt='separador' src={SeparadorPlato} />
+                <img loading='lazy' className='separador' alt='separador' src={SeparadorPlato} />
                 <PlatoFuerte />
             </section>
 
             <section ref={bebidasRef} className='seccion'>
-                <img className='separador' alt='separador' src={SeparadorBebidas} />
+                <img loading='lazy' className='separador' alt='separador' src={SeparadorBebidas} />
                 <Bebidas />
             </section>
 
             <section ref={paquetesRef} className='seccion'>
-                <img className='separador' alt='separador' src={SeparadorPromos} />
+                <img loading='lazy' className='separador' alt='separador' src={SeparadorPromos} />
                 <Paquetes />
             </section>
         </>

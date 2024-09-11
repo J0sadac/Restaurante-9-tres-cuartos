@@ -46,6 +46,7 @@ export default function Bebidas() {
         <SwiperSlide>
           <div className='contenedor'>
             <img
+              loading='lazy'
               className='flayer'
               src={bebida1}
               alt='...'
@@ -57,6 +58,7 @@ export default function Bebidas() {
         <SwiperSlide>
           <div className='contenedor'>
             <img
+              loading='lazy'
               className='flayer'
               src={bebida2}
               alt='...'
@@ -68,6 +70,7 @@ export default function Bebidas() {
         <SwiperSlide>
           <div className='contenedor'>
             <img
+              loading='lazy'
               className='flayer'
               src={bebida3}
               alt='...'
@@ -81,7 +84,7 @@ export default function Bebidas() {
 
       {isFullscreen && (
         <div className="fullscreen-overlay" onClick={handleCloseFullscreen}>
-          <img src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
+          <img loading='lazy' src={selectedImage} alt="Fullscreen" className="fullscreen-image" />
         </div>
       )}
     </>
